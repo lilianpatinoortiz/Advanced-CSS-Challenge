@@ -116,6 +116,7 @@ main {
     cursor: pointer;
     flex: 1 0 300px;
     min-height: 300px;
+    text-decoration: none;
     background-size: cover;
     border: 0.2rem solid #13293d;
     background-color: #13293d;
