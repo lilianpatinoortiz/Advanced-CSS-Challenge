@@ -86,7 +86,6 @@ main {
 
   #contact-me {
     > a {
-      display: flex;
       width: 10px;
     }
   }
