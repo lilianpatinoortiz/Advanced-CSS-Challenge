@@ -1,4 +1,4 @@
-# Space Rnner Portfolio
+# Space Runner Portfolio
 
 ### ~ Advanced-CSS-Challenge 😎
 
