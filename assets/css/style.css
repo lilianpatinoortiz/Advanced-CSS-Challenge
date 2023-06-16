@@ -80,6 +80,7 @@ main {
   }
 
   #my-bio {
+    max-width: 60%;
     align-items: center;
     margin: 50px;
   }
