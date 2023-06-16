@@ -63,7 +63,7 @@ main {
   flex-wrap: wrap;
   justify-content: flex-start;
   min-height: 500px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgb(0 0 0 / 64%);
   color: white;
 
   #my-picture {
@@ -84,24 +84,35 @@ main {
     align-items: center;
     margin: 50px;
   }
-
-  #contact-me {
-    > a {
-      width: 10px;
-    }
-  }
-
-  #linkedin-icon {
-    min-height: 50px;
-    max-width: 50px;
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
-    background-image: url("../images/Ln.png");
-  }
 }
 
 /* About me section end */
+
+/* My Portfolio section */
+
+#my-work {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 500px;
+  width: 100%;
+
+  > div {
+    background-size: cover;
+    border: 0.2rem solid #542824;
+    background-color: #542824;
+    background-image: url("../images/Space.jpg");
+  }
+
+  > div:hover {
+    opacity: 0.8;
+  }
+  .projectone {
+    flex: 2 0 700px;
+  }
+  .project {
+    flex: 1 0 300px;
+  }
+}
 
 footer {
   width: 100%;
@@ -123,4 +134,27 @@ footer {
       flex-direction: column;
     }
   }
+}
+
+/* This code was directly taken from strava*/
+#strava-button {
+  display: inline-block;
+  background-color: #fc52008f;
+  color: #fff;
+  padding: 5px 10px 5px 30px;
+  font-size: 11px;
+  font-family: Helvetica, Arial, sans-serif;
+  white-space: nowrap;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  border-radius: 3px;
+  background-image: url("https://badges.strava.com/logo-strava-echelon.png");
+}
+
+.strava-icon {
+  height: 13px;
+  width: 51px;
+  margin-left: 2px;
+  vertical-align: text-bottom;
 }
