@@ -2,7 +2,7 @@ body {
   font-size: 16px;
   display: flex;
   flex-direction: column;
-  min-height: 200vh;
+  min-height: 100vh;
   justify-content: flex-start;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -46,11 +46,20 @@ main {
   flex-wrap: wrap;
 }
 
-/* About me section */
-.about-me {
-  height: 500px;
+.section-divider {
+  text-align: center;
   width: 100%;
+  background-color: #13293d;
 
+  > h3 {
+    margin: 20px;
+    color: white;
+  }
+}
+
+/* About me section */
+#about-me {
+  width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -58,18 +67,14 @@ main {
   background-color: #13293d;
   background-image: url("../images/GGB.jpeg");
 }
-.about-me-container {
+#about-me-container {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  min-height: 500px;
-  background: rgba(0, 0, 0, 0.5);
+  justify-content: space-evenly;
+  min-height: 700px;
+  background: rgb(0 0 0 / 64%);
   color: white;
-
-  & section {
-    flex: 2 0 100px;
-  }
 
   #my-picture {
     border-radius: 50%;
@@ -85,28 +90,96 @@ main {
   }
 
   #my-bio {
+    max-width: 60%;
     align-items: center;
     margin: 50px;
-  }
 
-  #contact-me {
-    > a {
-      display: flex;
-      width: 10px;
+    #strava-cta::after {
+      content: "👇";
+      display: inline-block;
     }
-  }
-
-  #linkedin-icon {
-    min-height: 50px;
-    max-width: 50px;
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
-    background-image: url("../images/Ln.png");
   }
 }
 
 /* About me section end */
+
+/* My Portfolio section */
+
+#my-work {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 500px;
+  width: 100%;
+
+  .project {
+    display: flex;
+    cursor: pointer;
+    flex: 1 0 300px;
+    min-height: 300px;
+    text-decoration: none;
+    background-size: cover;
+    border: 0.2rem solid #13293d;
+    background-color: #13293d;
+    background-image: url("../images/Space.jpg");
+  }
+  .project:hover {
+    opacity: 0.8;
+  }
+
+  .projectone {
+    display: flex;
+    flex: 2 0 700px;
+  }
+
+  .project-content {
+    display: flex;
+    color: white;
+    margin: 15px;
+    align-items: flex-end;
+
+    .description {
+      color: #aaa4a4;
+    }
+  }
+}
+/* My Portfolio section end */
+
+/* Contact me section */
+#contact-me {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #542824;
+  min-height: 80px;
+  width: 100%;
+
+  .contact-text {
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  .contact-text h3::after {
+    content: "😀";
+    display: inline-block;
+    margin: 5px;
+  }
+
+  .contact-icons {
+    display: flex;
+    width: 80%;
+    color: white;
+    align-items: center;
+    justify-content: inherit;
+
+    > div {
+      display: flex;
+
+      > a {
+        color: #fff;
+      }
+    }
+  }
+}
 
 footer {
   width: 100%;
@@ -123,4 +196,32 @@ footer {
   nav {
     flex-direction: column;
   }
+  #about-me-container {
+    > section {
+      flex-direction: column;
+    }
+  }
+}
+
+/* This code was directly taken from strava*/
+#strava-button {
+  display: inline-block;
+  background-color: #fc52008f;
+  color: #fff;
+  padding: 5px 10px 5px 30px;
+  font-size: 11px;
+  font-family: Helvetica, Arial, sans-serif;
+  white-space: nowrap;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  border-radius: 3px;
+  background-image: url("https://badges.strava.com/logo-strava-echelon.png");
+}
+
+.strava-icon {
+  height: 13px;
+  width: 51px;
+  margin-left: 2px;
+  vertical-align: text-bottom;
 }
