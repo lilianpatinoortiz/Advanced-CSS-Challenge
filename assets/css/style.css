@@ -127,14 +127,8 @@ p {
     border: 0.2rem solid #13293d;
     background-color: #13293d;
     background-image: url("../images/Space.jpg");
-  }
-  .project:hover {
-    opacity: 0.8;
-  }
-
-  .projectone {
-    display: flex;
-    flex: 2 0 700px;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .project-content {
@@ -146,6 +140,40 @@ p {
     .description {
       color: #aaa4a4;
     }
+  }
+
+  .projectone {
+    display: flex;
+    flex: 2 0 700px;
+    background-position: inherit;
+    background-image: url("../images/umbrella-job-black.png");
+  }
+  .projectone:hover {
+    background-image: url("../images/umbrella-job.png");
+  }
+  .project-2 {
+    background-image: url("../images/prestudy-b.png");
+  }
+  .project-2:hover {
+    background-image: url("../images/prestudy.png");
+  }
+  .project-3 {
+    background-image: url("../images/secretsalad-b.png");
+  }
+  .project-3:hover {
+    background-image: url("../images/secretsalad.png");
+  }
+  .project-4 {
+    background-image: url("../images/rabbit-b.png");
+  }
+  .project-4:hover {
+    background-image: url("../images/rabbit.png");
+  }
+  .project-5 {
+    background-image: url("../images/weather-b.png");
+  }
+  .project-5:hover {
+    background-image: url("../images/weather.png");
   }
 }
 /* My Portfolio section end */
